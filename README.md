@@ -158,21 +158,19 @@ Integração de políticas públicas
 Documentação completa
 
 Métricas
+
 Métrica	Resultado
 Regiões analisadas	31 RAs
 Período coberto	10 anos
 Registros processados	71.035+
 Gráficos no dashboard	8 tipos
 Insights gerados	5 estratégicos
+
 📚 Referências
 SEEDF Dados Abertos
-
 Hugging Face - Censo Escolar
-
 IPEDF
-
 Anuário da Educação Básica
-
 Pé-de-Meia: Lei nº 14.818/2024
 
 Escolas Conectadas: Decreto nº 11.646/2023
