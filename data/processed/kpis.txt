@@ -1,0 +1,14 @@
+total_evadidos_periodo: 70500
+anos_analisados: 2020,2021,2022,2023,2024
+total_regioes: 18
+regiao_maior_evasao: Ceilândia
+total_evasao_maior_regiao: 4750
+etapa_maior_evasao: 1ª Série - Ensino Médio
+pe_de_meia_beneficiarios_df: 61943
+pe_de_meia_reducao_nacional: 43%
+pe_de_meia_investimento_bilhoes: 18.6
+escolas_conectadas_percentual_2026: 71.7%
+escolas_conectadas_total: 99005
+escolas_conectadas_estudantes: 24000000
+escolas_conectadas_investimento_bilhoes: 3.0
+ultima_atualizacao: 2026-05-28T11:14:43.351944

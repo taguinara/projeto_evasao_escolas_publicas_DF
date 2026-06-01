@@ -1,83 +1,50 @@
-# Byte-compiled / optimized / DLL files
+# Simplified .gitignore for a Python + Streamlit project on Windows (OneDrive)
+
+# Byte-compiled / caches
 __pycache__/
 *.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-pip-wheel-metadata/
+*.pyc
 
 # Virtual environments
-.venv/
 venv/
 env/
-ENV/
-__pypackages__/
+.venv/
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# Environment variables / secrets
+.env
+.env.*
 
-# Unit test / coverage
-.pytest_cache/
-.coverage
-coverage.xml
+# IDEs / editor
+.vscode/
+.idea/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Editor directories and files
-.vscode/
-.idea/
-*.suo
-*.user
-*.pyproj
+# Test / typecheck caches
+.pytest_cache/
+.mypy_cache/
+
+# Streamlit secrets
+.streamlit/secrets.toml
 
 # OS files
 .DS_Store
 Thumbs.db
 desktop.ini
 
+# Data (ignore large raw/processed files by default)
+data/raw/
+data/processed/
+
 # Logs and databases
 *.log
 *.sqlite3
 *.db
 
-# Secrets / environment
-.env
-.env.*
-secrets.toml
-*.pem
-*.key
-
-# Airflow local DB and logs (if running locally)
-airflow.cfg
-airflow.db
-logs/
-
-# Data files (raw and processed) - usually large or generated
-data/raw/
-data/processed/
-
-# PyInstaller
-*.manifest
-*.spec
-
-# IDE / tooling
-.mypy_cache/
-.pytest_cache/
-
-# Temporary files
+# Misc
+*.tmp
 *.swp
-*~
 
-# OneDrive / Windows paths (ignore sync conflict files)
-~$*
-*.lnk
-
-# End of .gitignore
+# To keep a generated file under version control, add a negation rule, e.g.:
+#  !data/processed/dashboard_evasao.csv

@@ -1,0 +1,30 @@
+[
+  {
+    "programa": "Análise de Evasão - DF",
+    "titulo": "Panorama da Evasão Escolar no Distrito Federal",
+    "descricao": "No período de 2020 a 2024, foram registrados 70,500 casos de abandono escolar. A região com maior concentração é Ceilândia, com 4750 evasões.",
+    "recomendacao": "Priorizar intervenções na região Ceilândia e na etapa 1ª Série - Ensino Médio.",
+    "fonte": "Censo Escolar INEP/SEEDF 2024"
+  },
+  {
+    "programa": "Pé-de-Meia",
+    "titulo": "Programa de Incentivo Financeiro à Permanência Escolar",
+    "descricao": "Instituído pela Lei nº 14.818/2024, o programa oferece R$ 200/mês para estudantes do ensino médio público, condicionado à frequência mínima de 80%. Nacionalmente, reduziu o abandono em 43%. No DF, 61.943 alunos são beneficiários.",
+    "recomendacao": "Expandir a cobertura do programa no DF e monitorar a correlação entre recebimento do benefício e redução da evasão.",
+    "fonte": "MEC - Assessoria de Comunicação Social, março/2026"
+  },
+  {
+    "programa": "Escolas Conectadas (Enec)",
+    "titulo": "Estratégia Nacional de Escolas Conectadas",
+    "descricao": "Lançada em setembro de 2023, a Enec já investiu R$ 3 bilhões, alcançando 71,7% das escolas (99.005 unidades) com internet de qualidade, beneficiando 24 milhões de estudantes.",
+    "recomendacao": "Priorizar a instalação de infraestrutura de internet nas regiões com maior evasão, começando por Ceilândia.",
+    "fonte": "MEC - Secretaria de Educação Básica, março/2026"
+  },
+  {
+    "programa": "Perfil do Aluno Evadido",
+    "titulo": "Características dos Estudantes que Abandonam",
+    "descricao": "A faixa etária de maior risco é entre 16 e 18 anos, com destaque para o ensino médio. A região Ceilândia concentra 18.2% das evasões do DF.",
+    "recomendacao": "Implementar programas de tutoria e acompanhamento psicológico específicos para esta faixa etária e região.",
+    "fonte": "Análise dos dados do Censo Escolar"
+  }
+]

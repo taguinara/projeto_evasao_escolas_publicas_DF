@@ -1,0 +1,29 @@
+{
+  "total_registros": 53292,
+  "colunas": [
+    "Ano",
+    "Região",
+    "UF",
+    "Nome do Município",
+    "Localização",
+    "Dependência Administrativa",
+    "Ano de Ensino",
+    "Código da Escola",
+    "Abandono",
+    "Aprovacao",
+    "Reprovacao"
+  ],
+  "anos_disponiveis": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fonte": "Hugging Face - Horusprg/censo-2015-2024"
+}
