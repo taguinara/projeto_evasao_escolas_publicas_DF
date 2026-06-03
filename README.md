@@ -21,6 +21,58 @@ A evasão escolar representa um desafio crítico nas escolas públicas do DF, es
 
 > *"A evasão escolar no DF está relacionada à reprovação, distorção idade-série, vulnerabilidade social e baixa frequência escolar."*
 
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+```bash
+Python 3.8+
+Git
+Pip
+
+📁 Estrutura do Projeto
+
+projeto_evasao_publico/
+├── scripts/                    # Scripts ETL
+│   ├── extract_data_se_df.py
+│   ├── extract_huggingface.py
+│   ├── extract_policy_data.py
+│   └── transform.py
+├── data/
+│   ├── raw/                    # Dados brutos
+│   └── processed/              # Dados processados
+├── dashboard/
+│   └── app.py                  # Streamlit app
+├── requirements.txt
+└── README.md
+
+```
+Passo a Passo
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/taguinara/projeto-evasao-df.git
+cd projeto-evasao-df
+
+# 2. Crie ambiente virtual
+python -m venv .venv
+# Windows
+.\.venv\Scripts\Activate.ps1
+
+# 3. Instale dependências
+pip install -r requirements.txt
+
+# 4. Execute pipeline
+python scripts/extract_data_se_df.py
+python scripts/extract_huggingface.py
+python scripts/extract_policy_data.py
+python scripts/transform.py
+
+# 5. Rode o dashboard
+streamlit run dashboard/app.py
+
+```
+
 ### Estatísticas Iniciais
 
 | Indicador | Valor |
@@ -69,42 +121,6 @@ A evasão escolar representa um desafio crítico nas escolas públicas do DF, es
 - [IPEDF](https://www.ipedf.df.gov.br/)
 
 ---
-
-## 🔄 Pipeline de Dados (ETL)
-
-EXTRACT TRANSFORM LOAD
-───────── ────────── ────
-extract_data_se_df.py → transform.py → data/processed/
-extract_huggingface.py - Limpeza - ranking_ras.csv
-extract_policy_data.py - Integração - evolucao.csv
-Cálculo KPIs - evasao_por_etapa.csv
-evasao_por_idade.csv
-kpis.txt
-
-
-
----
-
-## 📊 Dashboard Streamlit
-
-### Telas Desenvolvidas
-
-| Tela | Conteúdo |
-|------|----------|
-| **Visão Geral** | KPIs, totais, taxas |
-| **Ranking Regional** | Top 10 RAs com maior evasão |
-| **Evolução Temporal** | Série 2020-2024 |
-| **Perfil do Aluno** | Etapas e idades |
-| **Políticas Públicas** | Pé-de-Meia + Escolas Conectadas |
-
-### Tecnologias
-
-| Componente | Tecnologia |
-|------------|------------|
-| Framework | Streamlit 1.28+ |
-| Visualizações | Plotly 5.17+ |
-| Manipulação | Pandas 2.0+ |
-| Estilização | CSS customizado |
 
 ### KPIs Monitorados
 
@@ -178,33 +194,6 @@ kpis.txt
 
 ---
 
-## 🚀 Como Executar
-
-### Pré-requisitos
-
-```bash
-Python 3.8+
-Git
-Pip
-
-📁 Estrutura do Projeto
-
-projeto_evasao_publico/
-├── scripts/                    # Scripts ETL
-│   ├── extract_data_se_df.py
-│   ├── extract_huggingface.py
-│   ├── extract_policy_data.py
-│   └── transform.py
-├── data/
-│   ├── raw/                    # Dados brutos
-│   └── processed/              # Dados processados
-├── dashboard/
-│   └── app.py                  # Streamlit app
-├── requirements.txt
-└── README.md
-
-```
-
 📚 Referências
 
 SEEDF Dados Abertos
@@ -213,8 +202,13 @@ IPEDF
 Anuário da Educação Básica
 Legislação
 Pé-de-Meia: Lei nº 14.818/2024
-
 Escolas Conectadas: Decreto nº 11.646/2023
+
+🔗 **Links:**
+- [SEEDF Dados Abertos](https://data.se.df.gov.br/)
+- [Censo Escolar HF](https://huggingface.co/datasets/Horusprg/censo-2015-2024)
+- [IPEDF](https://www.ipedf.df.gov.br/)
+
 
 *Projeto Integrador - Módulo 2 | Ciência de Dados | Maio/2026*
 

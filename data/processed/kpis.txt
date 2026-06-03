@@ -11,4 +11,4 @@ escolas_conectadas_percentual_2026: 71.7%
 escolas_conectadas_total: 99005
 escolas_conectadas_estudantes: 24000000
 escolas_conectadas_investimento_bilhoes: 3.0
-ultima_atualizacao: 2026-05-28T11:14:43.351944
+ultima_atualizacao: 2026-06-03T09:16:13.349955
