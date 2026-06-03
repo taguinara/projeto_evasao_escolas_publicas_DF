@@ -282,7 +282,21 @@ def render_sidebar(df_ranking, df_etapas):
             st.cache_data.clear()
         except Exception:
             pass
-        st.experimental_rerun()
+        # Alguns ambientes Streamlit podem não expor `experimental_rerun`
+        # (ou podem alterar a API). Tentamos usá-la e, em caso de AttributeError
+        # ou outro problema, forçamos um rerun alternativo alterando os
+        # query-params e chamando `st.stop()` para terminar a execução atual.
+        try:
+            st.experimental_rerun()
+        except Exception:
+            try:
+                # força uma mudança na URL para provocar um novo run
+                st.experimental_set_query_params(_reset=int(datetime.now().timestamp()))
+            except Exception:
+                # se nem isto funcionar, apenas interrompemos a execução atual;
+                # o usuário pode atualizar a página manualmente
+                pass
+            st.stop()
     
     return {
         'anos': anos_selecionados,
