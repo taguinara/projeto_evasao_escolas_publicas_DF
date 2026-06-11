@@ -62,5 +62,5 @@ Abra uma issue para bugs ou sugestões. Pull requests são bem-vindos.
 
 ---
 
-_Projeto Integrador — Ciência de Dados | Maio/2026_
+_Projeto Integrador — Ciência de Dados | Junho/2026_
 
