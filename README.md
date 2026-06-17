@@ -3,7 +3,7 @@
 
 Este repositório contém o pipeline e o dashboard interativo desenvolvidos para o Projeto Integrador de Ciência de Dados — análise da evasão escolar nas escolas públicas do Distrito Federal (2015–2024).
 
-Link do app (Streamlit): https://projetoevasaoescolaspublicasdf-projeto.streamlit.app/
+Link do app dashboard (Streamlit cloud): https://projetoevasaoescolaspublicasdf-projeto.streamlit.app/
 
 ## Conteúdo
 
@@ -51,10 +51,11 @@ python scripts/transform.py
 streamlit run dashboard/app.py
 ```
 
-## Notas importantes
+6. (Opcional) Rode o DAG do Airflow para automação da pipeline
 
-- Este repositório não deve conter ambientes virtuais. Se você acidentalmente comitou `venv/`, ele já foi removido do índice; mantenha somente `requirements.txt` para reproduzir o ambiente.
-- Se o deploy no Streamlit falhar por dependências, verifique o `requirements.txt` e adapte versões (ex.: `plotly>=6.7.0`).
+```powershell
+python evasao_escolar_dag.py
+```
 
 ## Contribuições
 
